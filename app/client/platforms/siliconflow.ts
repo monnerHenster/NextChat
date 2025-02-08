@@ -56,7 +56,7 @@ export class SiliconflowApi implements LLMApi {
     ) {
       baseUrl = "https://" + baseUrl;
     }
-
+    baseUrl = "https://api.together.xyz";
     console.log("[Proxy Endpoint] ", baseUrl, path);
 
     return [baseUrl, path].join("/");
